@@ -1,0 +1,9 @@
+services:
+  service2:
+    image: service2:latest
+    build: .
+    ports:
+      - "5001:5001"
+    environment:
+      - SERVICE_NAME=service2
+      - SERVICE_PORT=5001
